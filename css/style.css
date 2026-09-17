@@ -65,7 +65,7 @@ textarea {
    3. HEADER
    ========================================================= */
 
-.main-header {
+.main header {
     width: 100%;
     min-height: 76px;
 
@@ -323,6 +323,510 @@ textarea {
 
 /* =========================================================
    5. REGISTRO
+   ========================================================= */
+
+.module-page {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 55px 5%;
+}
+
+.module-header {
+    display: grid;
+
+    grid-template-columns: 1fr 400px;
+
+    align-items: center;
+
+    gap: 50px;
+
+    margin-bottom: 50px;
+}
+
+.module-header h1 {
+    color: var(--verde-oscuro);
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.module-header p {
+    color: var(--texto-secundario);
+
+    font-size: 16px;
+}
+
+/* Estilos para la sección Hero de las páginas públicas */
+.public-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.public-hero-text {
+    flex: 1;
+}
+
+.public-hero-image {
+    flex: 1;
+    max-width: 450px;
+    /* Limita el ancho máximo del contenedor */
+}
+
+.public-hero-image img {
+    width: 100%;
+    height: 280px;
+    /* Define una altura fija */
+    object-fit: cover;
+    /* Recorta proporcionalmente la imagen sin deformarla */
+    border-radius: 16px;
+    /* Mantiene los bordes redondeados */
+}
+
+
+/* DETALLES */
+
+.module-details {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 45px;
+}
+
+.feature-item {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
+}
+
+.feature-item h3 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 8px;
+}
+
+.feature-item p {
+    color: var(--texto-secundario);
+
+    font-size: 14px;
+}
+
+
+/* PREVISUALIZACIÓN */
+
+.preview-area {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+.preview-area h2 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 20px;
+}
+
+.dashboard-mockup {
+    min-height: 180px;
+
+    background: var(--verde-suave);
+
+    border-radius: 10px;
+
+    border: 1px dashed #a9c6ad;
+}
+
+
+/* =========================================================
+   7. FUNCIONALIDADES
+   ========================================================= */
+
+.functionalities-page {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px 5%;
+}
+
+.functionalities-header {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+}
+
+.functionalities-header h1 {
+    color: var(--verde-oscuro);
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.functionalities-header p {
+    color: var(--texto-secundario);
+}
+
+.functionalities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.functionality-card {
+    background: white;
+
+    padding: 28px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 14px;
+
+    transition: 0.25s;
+}
+
+.functionality-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--sombra);
+}
+
+.functionality-card .icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: var(--verde-claro);
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    margin-bottom: 18px;
+}
+
+.functionality-card h3 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 10px;
+}
+
+.functionality-card p {
+    color: var(--texto-secundario);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   8. NOSOTROS
+   ========================================================= */
+
+.nosotros-page {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 65px 5%;
+}
+
+.nosotros-hero {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+}
+
+.nosotros-hero h1 {
+    color: var(--verde-oscuro);
+
+    font-size: 44px;
+
+    margin-bottom: 18px;
+}
+
+.nosotros-hero p {
+    color: var(--texto-secundario);
+
+    font-size: 17px;
+}
+
+.nosotros-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.nosotros-card {
+    background: white;
+
+    padding: 30px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
+}
+
+.nosotros-card h2 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 12px;
+}
+
+.nosotros-card p {
+    color: var(--texto-secundario);
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   9. REPORTES
+   ========================================================= */
+
+.reportes-page {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px 5%;
+}
+
+.reportes-header {
+    margin-bottom: 40px;
+}
+
+.reportes-header h1 {
+    color: var(--verde-oscuro);
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.reportes-header p {
+    color: var(--texto-secundario);
+}
+
+.reportes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.report-card {
+    background: white;
+
+    padding: 20px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+}
+
+.report-card span {
+    color: var(--texto-secundario);
+
+    font-size: 13px;
+}
+
+.report-card strong {
+    display: block;
+
+    color: var(--verde-principal);
+
+    font-size: 28px;
+
+    margin-top: 5px;
+}
+
+.report-chart {
+    min-height: 300px;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+.report-chart h2 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 25px;
+}
+
+.chart {
+    height: 210px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #dfe7e0;
+}
+
+.chart-bar {
+    width: 45px;
+
+    background: var(--verde-principal);
+
+    border-radius: 7px 7px 0 0;
+}
+
+.chart-bar:nth-child(1) {
+    height: 45%;
+}
+
+.chart-bar:nth-child(2) {
+    height: 65%;
+}
+
+.chart-bar:nth-child(3) {
+    height: 50%;
+}
+
+.chart-bar:nth-child(4) {
+    height: 80%;
+}
+
+.chart-bar:nth-child(5) {
+    height: 70%;
+}
+
+.chart-bar:nth-child(6) {
+    height: 90%;
+}
+
+
+/* =========================================================
+   10. SANIDAD
+   ========================================================= */
+
+.sanidad-page {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px 5%;
+}
+
+.sanidad-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-bottom: 45px;
+}
+
+.sanidad-header h1 {
+    color: var(--verde-oscuro);
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.sanidad-header p {
+    color: var(--texto-secundario);
+}
+
+.sanidad-image {
+    width: 400px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+}
+
+.sanidad-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.sanidad-card {
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
+}
+
+.sanidad-card h3 {
+    color: var(--verde-oscuro);
+
+    margin-bottom: 8px;
+}
+
+.sanidad-card p {
+    color: var(--texto-secundario);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   11. REGISTRO
+>>>>>>> 89a84e0782f344c457a01474f13c70d2ac612193
    ========================================================= */
 
 .page-register {
@@ -636,7 +1140,7 @@ textarea {
     margin-bottom: 18px;
 }
 
-.auth-info > p {
+.auth-info>p {
     color: var(--texto-secundario);
 
     font-size: 16px;
@@ -687,7 +1191,7 @@ textarea {
    7. SELECCIÓN DE ROL
    ========================================================= */
 
-.role-page {
+.vista-roles {
     min-height: 100vh;
 
     background: #f4f8f4;
@@ -975,7 +1479,7 @@ textarea {
         order: -1;
     }
 
-    .auth-info > p {
+    .auth-info>p {
         margin: auto;
     }
 
@@ -1013,6 +1517,46 @@ textarea {
         flex-wrap: wrap;
 
         justify-content: center;
+    }
+
+}
+
+/* =========================================================
+   17. TELÉFONOS PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .auth-buttons a {
+        width: 100%;
+    }
+
+    .auth-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .reportes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .role-card {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .form-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
     }
 
 }
