@@ -127,7 +127,7 @@ textarea {
 
 /* BOTONES */
 
-.auth-buttons {
+.Botones-autenticacion {
     display: flex;
     align-items: center;
 
@@ -136,8 +136,8 @@ textarea {
     white-space: nowrap;
 }
 
-.btn-primary,
-.btn-secondary {
+.btn-primario,
+.btn-secundario {
     display: inline-flex;
 
     align-items: center;
@@ -157,7 +157,7 @@ textarea {
     cursor: pointer;
 }
 
-.btn-primary {
+.btn-primario {
     color: white;
 
     background: var(--verde-principal);
@@ -165,11 +165,11 @@ textarea {
     border: 1px solid var(--verde-principal);
 }
 
-.btn-primary:hover {
+.btn-primario:hover {
     background: #286536;
 }
 
-.btn-secondary {
+.btn-secundario {
     color: var(--verde-principal);
 
     background: white;
@@ -177,23 +177,23 @@ textarea {
     border: 1px solid var(--verde-principal);
 }
 
-.btn-secondary:hover {
+.btn-secundario:hover {
     background: var(--verde-claro);
 }
 
 
 /* =========================================================
-   4. LANDING PAGE
+   4. Pagina Principal
    ========================================================= */
 
-.landing-page {
+.secion-principal{
     width: 100%;
 }
 
 
 /* HERO */
 
-.hero-split {
+.secion-principal {
     max-width: 1200px;
 
     min-height: 570px;
@@ -211,7 +211,7 @@ textarea {
     gap: 60px;
 }
 
-.hero-text h1 {
+.texto-Principal h1 {
     color: var(--verde-oscuro);
 
     font-size: clamp(38px, 5vw, 58px);
@@ -221,7 +221,7 @@ textarea {
     margin-bottom: 22px;
 }
 
-.hero-text p {
+.texto-Principal p {
     color: var(--texto-secundario);
 
     font-size: 18px;
@@ -231,7 +231,7 @@ textarea {
     max-width: 540px;
 }
 
-.hero-image {
+.imagen-principal {
     height: 400px;
 
     overflow: hidden;
@@ -241,16 +241,33 @@ textarea {
     box-shadow: var(--sombra);
 }
 
-.hero-image img {
+.imagen-principal img {
     height: 100%;
 
     object-fit: cover;
+}
+.etiqueta {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 7px 12px;
+
+    background: var(--verde-claro);
+
+    color: var(--verde-principal);
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
 }
 
 
 /* CARACTERÍSTICAS */
 
-.features-grid {
+.funcionalidades {
     max-width: 1200px;
 
     margin: auto;
@@ -258,7 +275,7 @@ textarea {
     padding: 70px 5%;
 }
 
-.features-grid > h2 {
+.funcionalidades h2 {
     text-align: center;
 
     color: var(--verde-oscuro);
@@ -268,7 +285,7 @@ textarea {
     margin-bottom: 40px;
 }
 
-.cards-container {
+.cuadricula-funcionalidades {
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -276,7 +293,7 @@ textarea {
     gap: 20px;
 }
 
-.feature-card {
+.tarjeta-funcionalidades {
     background: white;
 
     border: 1px solid var(--borde);
@@ -292,638 +309,20 @@ textarea {
     box-shadow: 0 4px 15px rgba(30, 70, 40, 0.04);
 }
 
-.feature-card:hover {
+.tarjeta-funcionalidades:hover {
     transform: translateY(-5px);
 
     box-shadow: var(--sombra);
 }
 
-.feature-card h3 {
+.ftarjeta-funcionalidades h3 {
     color: var(--verde-principal);
 }
 
 
-/* =========================================================
-   5. APRENDE
-   ========================================================= */
-
-.page-aprende {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 60px 5%;
-}
-
-.hero-center {
-    max-width: 800px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-}
-
-.hero-center h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 42px;
-
-    line-height: 1.15;
-
-    margin-bottom: 18px;
-}
-
-.hero-center p {
-    color: var(--texto-secundario);
-
-    font-size: 16px;
-}
-
-
-/* ARTÍCULOS */
-
-.articles-grid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 25px;
-}
-
-.card {
-    background: white;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 15px;
-
-    overflow: hidden;
-
-    box-shadow: 0 5px 18px rgba(30, 70, 40, 0.05);
-
-    transition: 0.25s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-
-    box-shadow: var(--sombra);
-}
-
-.card img {
-    height: 230px;
-
-    object-fit: cover;
-}
-
-.card .badge {
-    display: inline-block;
-
-    margin: 20px 22px 8px;
-
-    padding: 5px 11px;
-
-    background: var(--verde-claro);
-
-    color: var(--verde-principal);
-
-    border-radius: 20px;
-
-    font-size: 12px;
-
-    font-weight: 700;
-}
-
-.card h3 {
-    padding: 0 22px;
-
-    color: var(--verde-oscuro);
-
-    font-size: 20px;
-}
-
-.card p {
-    padding: 8px 22px;
-
-    color: var(--texto-secundario);
-
-    font-size: 14px;
-}
-
-.link-more {
-    display: inline-block;
-
-    padding: 10px 22px 22px;
-
-    color: var(--verde-principal);
-
-    font-size: 14px;
-
-    font-weight: 700;
-}
-
 
 /* =========================================================
-   6. MI GANADO
-   ========================================================= */
-
-.module-page {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 55px 5%;
-}
-
-.module-header {
-    display: grid;
-
-    grid-template-columns: 1fr 400px;
-
-    align-items: center;
-
-    gap: 50px;
-
-    margin-bottom: 50px;
-}
-
-.module-header h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.module-header p {
-    color: var(--texto-secundario);
-
-    font-size: 16px;
-}
-
-/* Estilos para la sección Hero de las páginas públicas */
-.public-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 5%;
-}
-
-.public-hero-text {
-    flex: 1;
-}
-
-.public-hero-image {
-    flex: 1;
-    max-width: 450px; /* Limita el ancho máximo del contenedor */
-}
-
-.public-hero-image img {
-    width: 100%;
-    height: 280px;         /* Define una altura fija */
-    object-fit: cover;     /* Recorta proporcionalmente la imagen sin deformarla */
-    border-radius: 16px;   /* Mantiene los bordes redondeados */
-}
-
-
-/* DETALLES */
-
-.module-details {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
-    margin-bottom: 45px;
-}
-
-.feature-item {
-    background: white;
-
-    padding: 25px;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
-}
-
-.feature-item h3 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 8px;
-}
-
-.feature-item p {
-    color: var(--texto-secundario);
-
-    font-size: 14px;
-}
-
-
-/* PREVISUALIZACIÓN */
-
-.preview-area {
-    padding: 30px;
-
-    background: white;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 15px;
-
-    box-shadow: var(--sombra);
-}
-
-.preview-area h2 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 20px;
-}
-
-.dashboard-mockup {
-    min-height: 180px;
-
-    background: var(--verde-suave);
-
-    border-radius: 10px;
-
-    border: 1px dashed #a9c6ad;
-}
-
-
-/* =========================================================
-   7. FUNCIONALIDADES
-   ========================================================= */
-
-.functionalities-page {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 60px 5%;
-}
-
-.functionalities-header {
-    text-align: center;
-
-    max-width: 750px;
-
-    margin: 0 auto 50px;
-}
-
-.functionalities-header h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 42px;
-
-    margin-bottom: 15px;
-}
-
-.functionalities-header p {
-    color: var(--texto-secundario);
-}
-
-.functionalities-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-}
-
-.functionality-card {
-    background: white;
-
-    padding: 28px;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 14px;
-
-    transition: 0.25s;
-}
-
-.functionality-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow: var(--sombra);
-}
-
-.functionality-card .icon {
-    width: 52px;
-    height: 52px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: var(--verde-claro);
-
-    border-radius: 12px;
-
-    font-size: 25px;
-
-    margin-bottom: 18px;
-}
-
-.functionality-card h3 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 10px;
-}
-
-.functionality-card p {
-    color: var(--texto-secundario);
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   8. NOSOTROS
-   ========================================================= */
-
-.nosotros-page {
-    max-width: 1100px;
-
-    margin: auto;
-
-    padding: 65px 5%;
-}
-
-.nosotros-hero {
-    text-align: center;
-
-    max-width: 800px;
-
-    margin: 0 auto 55px;
-}
-
-.nosotros-hero h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 44px;
-
-    margin-bottom: 18px;
-}
-
-.nosotros-hero p {
-    color: var(--texto-secundario);
-
-    font-size: 17px;
-}
-
-.nosotros-content {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-}
-
-.nosotros-card {
-    background: white;
-
-    padding: 30px;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 15px;
-
-    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
-}
-
-.nosotros-card h2 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 12px;
-}
-
-.nosotros-card p {
-    color: var(--texto-secundario);
-
-    font-size: 15px;
-}
-
-
-/* =========================================================
-   9. REPORTES
-   ========================================================= */
-
-.reportes-page {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 60px 5%;
-}
-
-.reportes-header {
-    margin-bottom: 40px;
-}
-
-.reportes-header h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 42px;
-
-    margin-bottom: 10px;
-}
-
-.reportes-header p {
-    color: var(--texto-secundario);
-}
-
-.reportes-grid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 15px;
-
-    margin-bottom: 30px;
-}
-
-.report-card {
-    background: white;
-
-    padding: 20px;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 12px;
-}
-
-.report-card span {
-    color: var(--texto-secundario);
-
-    font-size: 13px;
-}
-
-.report-card strong {
-    display: block;
-
-    color: var(--verde-principal);
-
-    font-size: 28px;
-
-    margin-top: 5px;
-}
-
-.report-chart {
-    min-height: 300px;
-
-    padding: 25px;
-
-    background: white;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 15px;
-
-    box-shadow: var(--sombra);
-}
-
-.report-chart h2 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 25px;
-}
-
-.chart {
-    height: 210px;
-
-    display: flex;
-
-    align-items: flex-end;
-
-    justify-content: center;
-
-    gap: 20px;
-
-    border-bottom: 1px solid #dfe7e0;
-}
-
-.chart-bar {
-    width: 45px;
-
-    background: var(--verde-principal);
-
-    border-radius: 7px 7px 0 0;
-}
-
-.chart-bar:nth-child(1) {
-    height: 45%;
-}
-
-.chart-bar:nth-child(2) {
-    height: 65%;
-}
-
-.chart-bar:nth-child(3) {
-    height: 50%;
-}
-
-.chart-bar:nth-child(4) {
-    height: 80%;
-}
-
-.chart-bar:nth-child(5) {
-    height: 70%;
-}
-
-.chart-bar:nth-child(6) {
-    height: 90%;
-}
-
-
-/* =========================================================
-   10. SANIDAD
-   ========================================================= */
-
-.sanidad-page {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 60px 5%;
-}
-
-.sanidad-header {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 40px;
-
-    margin-bottom: 45px;
-}
-
-.sanidad-header h1 {
-    color: var(--verde-oscuro);
-
-    font-size: 42px;
-
-    margin-bottom: 10px;
-}
-
-.sanidad-header p {
-    color: var(--texto-secundario);
-}
-
-.sanidad-image {
-    width: 400px;
-    height: 240px;
-
-    object-fit: cover;
-
-    border-radius: 16px;
-}
-
-.sanidad-grid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 18px;
-}
-
-.sanidad-card {
-    background: white;
-
-    padding: 25px;
-
-    border: 1px solid var(--borde);
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 15px rgba(30, 70, 40, 0.04);
-}
-
-.sanidad-card h3 {
-    color: var(--verde-oscuro);
-
-    margin-bottom: 8px;
-}
-
-.sanidad-card p {
-    color: var(--texto-secundario);
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   11. REGISTRO
+   5. REGISTRO
    ========================================================= */
 
 .page-register {
@@ -1054,7 +453,7 @@ textarea {
 
 
 /* =========================================================
-   12. LOGIN
+   6. LOGIN
    ========================================================= */
 
 .auth-page {
@@ -1285,7 +684,7 @@ textarea {
 
 
 /* =========================================================
-   13. SELECCIÓN DE ROL
+   7. SELECCIÓN DE ROL
    ========================================================= */
 
 .role-page {
@@ -1436,7 +835,7 @@ textarea {
 
 
 /* =========================================================
-   14. FOOTER
+   8. FOOTER
    ========================================================= */
 
 .main-footer {
@@ -1483,52 +882,6 @@ textarea {
     color: white;
 }
 
-
-/* =========================================================
-   15. RESPONSIVE - TABLET
-   ========================================================= */
-
-@media (max-width: 1000px) {
-
-    .main-header {
-        flex-wrap: wrap;
-
-        padding: 15px 4%;
-    }
-
-    .nav-menu {
-        order: 3;
-
-        width: 100%;
-
-        overflow-x: auto;
-
-        justify-content: flex-start;
-    }
-
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .functionalities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sanidad-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .reportes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-/* =========================================================
-   16. RESPONSIVE - MÓVIL
-   ========================================================= */
-
 @media (max-width: 750px) {
 
     /* HEADER */
@@ -1564,7 +917,7 @@ textarea {
 
     /* LANDING */
 
-    .hero-split {
+    .secion-principal-div {
         grid-template-columns: 1fr;
 
         padding: 50px 20px;
@@ -1586,83 +939,6 @@ textarea {
     .cards-container {
         grid-template-columns: 1fr;
     }
-
-
-    /* APRENDE */
-
-    .page-aprende {
-        padding: 45px 20px;
-    }
-
-    .hero-center h1 {
-        font-size: 34px;
-    }
-
-    .articles-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* MI GANADO */
-
-    .module-header {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-    }
-
-    .module-header img {
-        width: 100%;
-
-        height: 250px;
-    }
-
-    .module-details {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* FUNCIONALIDADES */
-
-    .functionalities-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* NOSOTROS */
-
-    .nosotros-content {
-        grid-template-columns: 1fr;
-    }
-
-    .nosotros-hero h1 {
-        font-size: 35px;
-    }
-
-
-    /* REPORTES */
-
-    .reportes-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    /* SANIDAD */
-
-    .sanidad-header {
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .sanidad-image {
-        width: 100%;
-    }
-
-    .sanidad-grid {
-        grid-template-columns: 1fr;
-    }
-
 
     /* REGISTRO */
 
@@ -1741,234 +1017,3 @@ textarea {
 
 }
 
-
-/* =========================================================
-   17. TELÉFONOS PEQUEÑOS
-   ========================================================= */
-
-@media (max-width: 450px) {
-
-    .auth-buttons {
-        flex-direction: column;
-    }
-
-    .auth-buttons a {
-        width: 100%;
-    }
-
-    .auth-benefits {
-        grid-template-columns: 1fr;
-    }
-
-    .reportes-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .role-card {
-        flex-direction: column;
-
-        align-items: center;
-
-        text-align: center;
-    }
-
-    .form-options {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 10px;
-    }
-
-}
-
-/* Variables Globales de Color y Estilo */
-:root {
-    --bg-color: #f3f5f3;
-    --card-bg: #ffffff;
-    --primary-green: #1d3c26;
-    --accent-green: #2d5a37;
-    --text-dark: #222222;
-    --text-muted: #666666;
-    --border-color: #e2e8f0;
-    --border-active: #2d5a37;
-    --radius-lg: 16px;
-    --radius-sm: 8px;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-dark);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
-.top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background-color: var(--card-bg);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.brand-icon {
-    font-size: 24px;
-    color: var(--primary-green);
-}
-
-.brand-name {
-    font-weight: 700;
-    font-size: 16px;
-    display: block;
-    letter-spacing: 0.5px;
-}
-
-.brand-sub {
-    font-size: 11px;
-    color: var(--text-muted);
-}
-
-.user-menu {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.badge-demo {
-    background-color: #e2e8f0;
-    font-size: 11px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 600;
-    color: #4a5568;
-}
-
-.user-profile {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
-.user-name {
-    font-size: 13px;
-    font-weight: 600;
-}
-
-/* Contenido Principal */
-.role-container {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.role-header h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.role-header p {
-    color: var(--text-muted);
-    font-size: 14px;
-    margin-bottom: 40px;
-}
-
-/* Grid de Tarjetas */
-.roles-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.role-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 24px;
-    text-align: left;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    position: relative;
-}
-
-.role-card:hover {
-    border-color: var(--border-active);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.role-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.icon-box {
-    width: 40px;
-    height: 40px;
-    background-color: #f1f5f9;
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-dark);
-    font-size: 18px;
-}
-
-.btn-access {
-    background-color: #e2e8f0;
-    border: none;
-    padding: 6px 12px;
-    border-radius: var(--radius-sm);
-    font-size: 11px;
-    font-weight: 700;
-    cursor: pointer;
-    color: var(--text-dark);
-}
-
-.role-card h2 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.role-card p {
-    font-size: 13px;
-    color: var(--text-muted);
-    line-height: 1.4;
-}
-
-/* Footer de selección */
-.role-footer {
-    margin-top: 40px;
-    font-size: 13px;
-    color: var(--text-muted);
-}
-
-.role-footer a {
-    color: var(--accent-green);
-    text-decoration: underline;
-}

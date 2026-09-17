@@ -2,177 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terrabovino - Recuperación de Contraseña</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Terrabovino - Recuperar Contraseña</title>
+    <link rel="stylesheet" href="recuperacion_cuenta.css">
 </head>
-<body class="auth-body">
+<body>
 
-    <main class="auth-wrapper">
-        <div class="auth-card">
-            
-            <!-- Encabezado -->
-            <div class="auth-header">
-                <div class="brand-logo">
-                    <i class="fa-solid fa-cow"></i>
-                </div>
-                <h1 class="brand-title">TERRABOVINO</h1>
-                <h2 id="form-title">¿Olvidaste tu contraseña?</h2>
-                <p id="form-subtitle">Ingresa tu correo registrado y te enviaremos un código de verificación.</p>
+    <div class="caja">
+        <h2>TERRABOVINO</h2>
+        <h3 id="titulo">Recuperar contraseña</h3>
+        <p id="subtitulo">Ingresa tu correo para enviarte un código.</p>
+
+        <!-- aca se mete el correo donde me envia el codigo  -->
+        <div id="correo">
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
             </div>
-
-           
-            <form id="step-1" class="auth-form">
-                <div class="input-group">
-                    <label for="recovery-email">Correo Electrónico</label>
-                    <div class="input-wrapper">
-                        <i class="fa-regular fa-envelope input-icon"></i>
-                        <input type="email" id="recovery-email" placeholder="ejemplo@terrabovino.com" required>
-                    </div>
-                </div>
-
-                <button type="submit" class="btn-primary">
-                    Enviar Código de Verificación <i class="fa-solid fa-paper-plane btn-icon"></i>
-                </button>
-            </form>
-
-       
-            <form id="step-2" class="auth-form hidden">
-                <div class="input-group">
-                    <label>Código de Seguridad (6 dígitos)</label>
-                    <div class="otp-container">
-                        <input type="text" maxlength="1" class="otp-input" required autofocus>
-                        <input type="text" maxlength="1" class="otp-input" required>
-                        <input type="text" maxlength="1" class="otp-input" required>
-                        <input type="text" maxlength="1" class="otp-input" required>
-                        <input type="text" maxlength="1" class="otp-input" required>
-                        <input type="text" maxlength="1" class="otp-input" required>
-                    </div>
-                </div>
-
-                <div class="resend-info">
-                    <span>¿No recibiste el código?</span>
-                    <button type="button" class="btn-link" id="resend-btn">Reenviar código</button>
-                </div>
-
-                <button type="submit" class="btn-primary">
-                    Verificar Código <i class="fa-solid fa-shield-halved btn-icon"></i>
-                </button>
-            </form>
-
-            <form id="step-3" class="auth-form hidden">
-                <div class="input-group">
-                    <label for="new-password">Nueva Contraseña</label>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-lock input-icon"></i>
-                        <input type="password" id="new-password" placeholder="••••••••" required>
-                        <i class="fa-regular fa-eye toggle-password" id="toggle-p1"></i>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="confirm-password">Confirmar Nueva Contraseña</label>
-                    <div class="input-wrapper">
-                        <i class="fa-solid fa-lock input-icon"></i>
-                        <input type="password" id="confirm-password" placeholder="••••••••" required>
-                        <i class="fa-regular fa-eye toggle-password" id="toggle-p2"></i>
-                    </div>
-                </div>
-
-                <!-- Requisitos de Contraseña -->
-                <div class="password-requirements">
-                    <p class="req-title">La contraseña debe contener:</p>
-                    <ul>
-                        <li id="req-length"><i class="fa-solid fa-circle-notch"></i> Mínimo 8 caracteres</li>
-                        <li id="req-num"><i class="fa-solid fa-circle-notch"></i> Al menos un número</li>
-                        <li id="req-spec"><i class="fa-solid fa-circle-notch"></i> Al menos un carácter especial (@, #, $, etc.)</li>
-                    </ul>
-                </div>
-
-                <button type="submit" class="btn-primary">
-                    Guardar Nueva Contraseña <i class="fa-solid fa-check btn-icon"></i>
-                </button>
-            </form>
-
-         
-            <div id="success-state" class="success-card hidden">
-                <div class="success-icon">
-                    <i class="fa-solid fa-circle-check"></i>
-                </div>
-                <h3>¡Contraseña Actualizada!</h3>
-                <p>Tu contraseña ha sido restablecida con éxito. Ya puedes iniciar sesión con tu nueva clave.</p>
-                <a href="login.html" class="btn-primary block-link">Ir a Iniciar Sesión</a>
-            </div>
-
-     
-            <div class="auth-footer">
-                <a href="login.html" class="back-link">
-                    <i class="fa-solid fa-arrow-left"></i> Volver a Iniciar Sesión
-                </a>
-            </div>
-
+            <button type="button" id="btn-paso1">Enviar código</button>
         </div>
-    </main>
 
-    <script>
-        // Lógica de transición entre pasos para prototipo
-        const step1 = document.getElementById('step-1');
-        const step2 = document.getElementById('step-2');
-        const step3 = document.getElementById('step-3');
-        const successState = document.getElementById('success-state');
 
-        const title = document.getElementById('form-title');
-        const subtitle = document.getElementById('form-subtitle');
 
-        step1.addEventListener('submit', (e) => {
-            e.preventDefault();
-            step1.classList.add('hidden');
-            step2.classList.remove('hidden');
-            title.textContent = "Verifica tu Identidad";
-            subtitle.textContent = "Hemos enviado un código de 6 dígitos a tu correo electrónico.";
-        });
 
-        step2.addEventListener('submit', (e) => {
-            e.preventDefault();
-            step2.classList.add('hidden');
-            step3.classList.remove('hidden');
-            title.textContent = "Crea tu Nueva Contraseña";
-            subtitle.textContent = "Asegúrate de utilizar una combinación segura.";
-        });
+<!-- aca para el codigo -->
+        <div id="codigo">
+            <div class="campo">
+                <label for="código">Codigo</label>
+                <input type="codigo" id="codigo" placeholder="*******">
+            </div>
+            <button type="button" id="btn-paso1"> Enviar código</button>
+        </div>
 
-        step3.addEventListener('submit', (e) => {
-            e.preventDefault();
-            step3.classList.add('hidden');
-            title.classList.add('hidden');
-            subtitle.classList.add('hidden');
-            successState.classList.remove('hidden');
-        });
 
-        // Toggle mostrar/ocultar contraseña
-        const togglePass = (inputId, iconId) => {
-            const input = document.getElementById(inputId);
-            const icon = document.getElementById(iconId);
-            icon.addEventListener('click', () => {
-                const isPassword = input.type === 'password';
-                input.type = isPassword ? 'text' : 'password';
-                icon.classList.toggle('fa-eye');
-                icon.classList.toggle('fa-eye-slash');
-            });
-        };
+<!--aca para la nueva contraseña-->
+        <div id="Nueva contraseña">
+            <div class="campo">
+                <label for="Nueva contraseña">Nueva Contraseña</label>
+                <input type="nueva contraseña" id="nueva contraseña" placeholder="*******">
+            </div>
 
-        togglePass('new-password', 'toggle-p1');
-        togglePass('confirm-password', 'toggle-p2');
 
-        // Auto-focus para OTP inputs
-        const otpInputs = document.querySelectorAll('.otp-input');
-        otpInputs.forEach((input, index) => {
-            input.addEventListener('input', () => {
-                if (input.value && index < otpInputs.length - 1) {
-                    otpInputs[index + 1].focus();
-                }
-            });
-        });
-    </script>
+
+<!--verificar la nueva contraseña-->
+             <div class="campo">
+                <label for="confirmar  contraseña">Confirmar Contraseña</label>
+                <input type="confirmar contraseña" id="confirmar contraseña" placeholder="*******">
+            </div>
+            <button type="button" id="btn-paso1"> Verificar nueva contraseña</button>
+        </div>
+
+
+        
+
+        <div class="pie">
+            <a href="index.html">Volver al login</a>
+        </div>
+    </div>
+
+   
 </body>
 </html>
