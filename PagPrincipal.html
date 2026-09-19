@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal de Terrabovinos</title>
+
+    <title>Terrabovino - Gestión Ganadera</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- ================= HEADER ================= -->
 
-    <header class="main-header">
+    <header class="header">
 
         <!-- LOGO -->
-        <a href="index.html" class="logo">
-            🐄 TERRABOVINO
+        <a href="PagPrincipal.html" class="logo">
+            TERRABOVINO
         </a>
 
 
@@ -38,13 +43,13 @@
 
 
         <!-- BOTONES -->
-        <div class="botones-acceso">
+        <div class="botones-autenticacion">
 
             <a href="login.html" class="btn-secundario">
                 Iniciar sesión
             </a>
 
-            <a href="registro.html" class="btn-principal">
+            <a href="registro.html" class="btn-primario">
                 Comenzar ahora
             </a>
 
@@ -57,19 +62,14 @@
 
     <main>
 
-        <!-- HERO -->
-
         <section class="seccion-principal" id="inicio">
 
-            <div class="contenido-principal">
+            <div class="Contenido">
 
-
-                <!-- TEXTO -->
-
-                <div class="texto-principal">
+                <section class="texto-principal">
 
                     <span class="etiqueta">
-                        🐄 Gestión ganadera inteligente
+                        Gestión ganadera inteligente
                     </span>
 
 
@@ -86,41 +86,38 @@
                     </p>
 
 
-                    <div class="botones-principales">
+                    <nav class="botones-principales">
 
-                        <a href="registro.html" class="boton-principal">
+                        <a href="registro.html" class="btn-primario">
                             Comenzar ahora
                         </a>
 
-                        <a href="#funcionalidades" class="boton-secundario">
+                        <a href="#funcionalidades" class="btn-secundario">
                             Conocer más
                         </a>
 
-                    </div>
+                    </nav>
 
-                </div>
+                </section>
 
 
                 <!-- TARJETA -->
 
-                <div class="tarjeta-resumen">
+                <aside class="panel">
 
-                    <div class="encabezado-tarjeta">
+                    <header class="encabezado-de-tarjeta">
 
                         <span>
                             Resumen de tu finca
                         </span>
 
-                        <span>
-                            📊
-                        </span>
 
-                    </div>
+                    </header>
 
 
-                    <div class="estadisticas">
+                    <section class="estadisticas">
 
-                        <div class="estadistica">
+                        <article class="estadistica">
 
                             <h3>48</h3>
 
@@ -128,10 +125,10 @@
                                 Bovinos
                             </p>
 
-                        </div>
+                        </article>
 
 
-                        <div class="estadistica">
+                        <article class="estadistica">
 
                             <h3>12</h3>
 
@@ -139,10 +136,10 @@
                                 Potreros
                             </p>
 
-                        </div>
+                        </article>
 
 
-                        <div class="estadistica">
+                        <article class="estadistica">
 
                             <h3>157 L</h3>
 
@@ -150,40 +147,34 @@
                                 Producción
                             </p>
 
-                        </div>
+                        </article>
 
-                    </div>
+                    </section>
 
 
-                    <div class="alert">
+                    <aside class="alerta">
 
                         ⚠️ Tienes 3 actividades pendientes
 
-                    </div>
+                    </aside>
 
-                </div>
+                </aside>
 
             </div>
 
         </section>
 
-
-        <!-- ================= FUNCIONALIDADES ================= -->
-
-        <section class="features" id="funcionalidades">
+        <article class="funcionalidades" id="funcionalidades">
 
             <h2>
                 Todo lo que necesitas para tu ganadería
             </h2>
 
 
-            <div class="rejilla-funcionalidades">
+            <section class="cuadricula-funcionalidades">
 
-                <article class="tarjeta-funcionalidad">
+                <article class="tarjeta-funcionalidades">
 
-                    <div class="incono-funcionalidad">
-                        📚
-                    </div>
 
                     <h3>
                         Aprende
@@ -197,11 +188,8 @@
                 </article>
 
 
-                <article class="tarjeta-funcionalidad">
+                <article class="tarjeta-funcionalidades">
 
-                    <div class="incono-funcionalidad">
-                        🐄
-                    </div>
 
                     <h3>
                         Mi Ganado
@@ -215,11 +203,8 @@
                 </article>
 
 
-                <article class="tarjeta-funcionalidad">
+                <article class="tarjeta-funcionalidades">
 
-                    <div class="incono-funcionalidad">
-                        ❤️
-                    </div>
 
                     <h3>
                         Sanidad
@@ -233,11 +218,7 @@
                 </article>
 
 
-                <article class="tarjeta-funcionalidad">
-
-                    <div class="incono-funcionalidad">
-                        📊
-                    </div>
+                <article class="tarjeta-funcionalidades">
 
                     <h3>
                         Reportes
@@ -250,9 +231,9 @@
 
                 </article>
 
-            </div>
+            </section>
 
-        </section>
+        </article>
 
     </main>
 
@@ -262,7 +243,7 @@
     <footer class="main-footer">
 
         <div class="footer-logo">
-            🐄 TERRABOVINO
+             TERRABOVINO
         </div>
 
         <nav class="footer-links">
@@ -293,5 +274,4 @@
 
 </body>
 
-</html>
 </html>
