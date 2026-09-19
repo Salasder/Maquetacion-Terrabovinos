@@ -1,129 +1,557 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terrabovino - Crear cuenta</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Terrabovino - Crear cuenta
+    </title>
+
+    <!-- CONEXIÓN CON CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
 
+
 <body>
-    <main class="Pagina-registro">
 
-    <div class="diseño-dividido">
 
-        <aside class="panel-informacion">
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
 
-            <h2>
-                Comienza a gestionar tu ganadería
-            </h2>
+    <header class="encabezado">
 
-            <p>
-                Crea tu cuenta y disfruta de todas las herramientas
-                que Terrabovino tiene para ti.
-            </p>
+        <a
+    href="index.html"
+    class="logotipo-pie"
+>
+    <img
+        src=
+        alt="Terrabovinos - Tecnología para el campo"
+       
+    >
+    TERRABOVINO
+</a>
 
-            <ul>
-                <li>Registra y controla tus bovinos</li>
-                <li>Gestiona tus potreros</li>
-                <li>Lleva el control sanitario</li>
-                <li>Consulta reportes importantes</li>
-            </ul>
 
-            <a href="index.html" class="btn-secundario">
-                ← Volver al inicio
+        <nav class="navegacion">
+
+            <a href="index.html">
+                Inicio
             </a>
 
-        </aside>
+            <a href="#">
+                Aprende
+            </a>
+
+            <a href="#">
+                Ganadería
+            </a>
+
+            <a href="#">
+                Funcionalidades
+            </a>
+
+            <a href="#">
+                Nosotros
+            </a>
+
+        </nav>
 
 
-        <section class="panel-formulario">
+        <nav class="acciones-encabezado">
 
-            <h2>Crear cuenta</h2>
+            <a
+                href="login.html"
+                class="enlace-inicio-sesion"
+            >
+                Iniciar sesión
+            </a>
 
-            <p>
-                Completa la información para registrarte.
-            </p>
+            <a
+                href="registro.html"
+                class="boton-encabezado"
+            >
+                Comenzar ahora
+            </a>
 
-            <form action="selecciona_tu_rol.html">
+        </nav>
 
-                <label>Nombre completo</label>
+    </header>
 
-                <input
-                    type="text"
-                    placeholder="Ingresa tu nombre"
-                    required
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main class="pagina-de-registro">
+
+
+        <section class="diseño-dividido">
+
+
+            <!-- =========================
+                 PANEL DE INFORMACIÓN
+            ========================== -->
+
+            <aside class="panel-de-informacion">
+
+                <section class="contenido-informacion">
+
+
+                    <a
+                        href="index.html"
+                        class="logotipo-panel"
+                    >
+                        TERRABOVINO
+                    </a>
+
+
+                    <h1>
+                        Comienza a transformar
+                        tu ganadería hoy
+                    </h1>
+
+
+                    <p class="texto-informacion">
+
+                        Únete a nuestra plataforma y lleva
+                        la gestión de tu ganadería al
+                        siguiente nivel.
+
+                    </p>
+
+
+                    <ul class="lista-beneficios">
+
+
+                        <li class="beneficio">
+
+                            <strong>
+                                Acceso a cursos prácticos
+                            </strong>
+
+                            <span>
+                                Manuales veterinarios y
+                                nutrición por expertos
+                                del hato.
+                            </span>
+
+                        </li>
+
+
+                        <li class="beneficio">
+
+                            <strong>
+                                Seguimiento de tu hato
+                            </strong>
+
+                            <span>
+                                Lleva registros individuales
+                                de peso y sanidad de
+                                forma ágil.
+                            </span>
+
+                        </li>
+
+
+                        <li class="beneficio">
+
+                            <strong>
+                                Certificados de aprendizaje
+                            </strong>
+
+                            <span>
+                                Demuestra tu experiencia
+                                con certificados digitales.
+                            </span>
+
+                        </li>
+
+
+                    </ul>
+
+
+                    <p class="sello-excelencia">
+
+                        🛡 ESTÁNDAR DE EXCELENCIA
+                        AGROPECUARIA
+
+                    </p>
+
+
+                </section>
+
+            </aside>
+
+
+
+            <!-- =========================
+                 FORMULARIO
+            ========================== -->
+
+            <section class="panel-de-formulario">
+
+
+                <h2>
+                    Crear tu cuenta
+                </h2>
+
+
+                <p class="descripcion-formulario">
+
+                    Únete a la plataforma de aprendizaje
+                    para ganadería moderna.
+
+                </p>
+
+
+                <form
+                    class="formulario-registro"
                 >
 
 
-                <label>Correo electrónico</label>
+                    <!-- NOMBRE -->
 
-                <input
-                    type="email"
-                    placeholder="ejemplo@correo.com"
-                    required
-                >
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
 
-
-                <label>Número de teléfono</label>
-
-                <input
-                    type="tel"
-                    placeholder="300 000 0000"
-                    required
-                >
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Juan Pérez"
+                        required
+                    >
 
 
-                <label>Contraseña</label>
 
-                <input
-                    type="password"
-                    placeholder="Crea una contraseña"
-                    required
-                >
+                    <!-- CORREO -->
 
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
 
-                <label>Confirmar contraseña</label>
-
-                <input
-                    type="password"
-                    placeholder="Confirma tu contraseña"
-                    required
-                >
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="juan@ejemplo.com"
+                        required
+                    >
 
 
-                <label class="terminos">
 
-                    <input type="checkbox" required>
+                    <!-- CONTRASEÑA -->
 
-                    Acepto los términos y condiciones
+                    <label for="contrasena">
+                        Contraseña
+                    </label>
 
-                </label>
+                    <section class="campo-contrasena">
+
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            placeholder="Crea una contraseña fuerte"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="boton-mostrar"
+                        >
+                            Mostrar
+                        </button>
+
+                    </section>
 
 
-                <button
-                    type="submit"
-                    class="btn-principal"
-                  
-                >
-                    Crear cuenta
-                </button>
 
-            </form>
+                    <!-- NOMBRE DE FINCA -->
+
+                    <label for="finca">
+
+                        Nombre de la finca
+
+                        <span class="texto-opcional">
+                            (opcional)
+                        </span>
+
+                    </label>
 
 
-            <p class="login-link">
-                ¿Ya tienes una cuenta?
-                <a href="login.html">
-                    Iniciar sesión
-                </a>
-            </p>
+                    <input
+                        type="text"
+                        id="finca"
+                        name="finca"
+                        placeholder="Ej. Hacienda El Roble"
+                    >
+
+
+
+                    <!-- ROL -->
+
+                    <fieldset class="seleccion-rol">
+
+                        <legend>
+                            Selecciona tu rol
+                        </legend>
+
+
+                        <label class="tarjeta-rol">
+
+                            <input
+                                type="radio"
+                                name="rol"
+                                value="ganadero"
+                                required
+                            >
+
+                            <strong>
+                                Ganadero
+                            </strong>
+
+                            <small>
+                                Dueño de finca
+                            </small>
+
+                        </label>
+
+
+                        <label class="tarjeta-rol">
+
+                            <input
+                                type="radio"
+                                name="rol"
+                                value="veterinario"
+                            >
+
+                            <strong>
+                                Veterinario
+                            </strong>
+
+                            <small>
+                                Control sanitario
+                            </small>
+
+                        </label>
+
+
+                        <label class="tarjeta-rol">
+
+                            <input
+                                type="radio"
+                                name="rol"
+                                value="trabajador"
+                            >
+
+                            <strong>
+                                Trabajador
+                            </strong>
+
+                            <small>
+                                Registro diario
+                            </small>
+
+                        </label>
+
+
+                        <label class="tarjeta-rol">
+
+                            <input
+                                type="radio"
+                                name="rol"
+                                value="administrador"
+                            >
+
+                            <strong>
+                                Administrador
+                            </strong>
+
+                            <small>
+                                Todo el sistema
+                            </small>
+
+                        </label>
+
+
+                    </fieldset>
+
+
+
+                    <!-- TÉRMINOS -->
+
+                    <label class="aceptar-terminos">
+
+                        <input
+                            type="checkbox"
+                            name="terminos"
+                            required
+                        >
+
+                        <span>
+                            Acepto los términos y condiciones
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- BOTÓN PRINCIPAL -->
+
+                    <button
+                        type="submit"
+                        class="boton-principal"
+                    >
+                        Crear cuenta y empezar →
+                    </button>
+
+
+
+                    <!-- SEPARADOR -->
+
+                    <p class="separador">
+
+                        <span>
+                            o
+                        </span>
+
+                    </p>
+
+
+
+                    <!-- GOOGLE -->
+
+                    <button
+                        type="button"
+                        class="boton-google"
+                    >
+
+                        <strong>
+                            G
+                        </strong>
+
+                        Registrarse con Google
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- POLÍTICAS -->
+
+                <p class="politica">
+
+                    Al registrarte, aceptas nuestros
+
+                    <a href="#">
+                        Términos y condiciones
+                    </a>
+
+                    y nuestra
+
+                    <a href="#">
+                        Política de privacidad
+                    </a>
+
+                </p>
+
+
+
+                <!-- INICIO DE SESIÓN -->
+
+                <p class="enlace-registro">
+
+                    ¿Ya tienes una cuenta?
+
+                    <a href="login.html">
+                        Iniciar sesión
+                    </a>
+
+                </p>
+
+
+            </section>
+
 
         </section>
 
-    </div>
 
-</main>
+    </main>
+
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer class="pie-de-pagina">
+
+
+        <section class="contenido-pie">
+
+
+            <a
+                href="index.html"
+                class="logotipo-pie"
+            >
+                 TERRABOVINO
+            </a>
+
+
+            <nav class="enlaces-pie">
+
+                <a href="#">
+                    Ayuda
+                </a>
+
+                <a href="#">
+                    Términos
+                </a>
+
+                <a href="#">
+                    Privacidad
+                </a>
+
+                <a href="#">
+                    Contacto
+                </a>
+
+            </nav>
+
+
+        </section>
+
+
+        <p class="copyright">
+
+            © 2026 Terrabovino.
+            Todos los derechos reservados.
+            Hecho con orgullo para el campo latinoamericano.
+
+        </p>
+
+
+    </footer>
+
+
 </body>
+
 </html>

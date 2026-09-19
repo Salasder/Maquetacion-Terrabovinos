@@ -1,0 +1,1294 @@
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+
+    --verde-oscuro: #234d2a;
+
+    --verde-principal: #457c4c;
+
+    --verde-claro: #dbe9dd;
+
+    --verde-fondo: #f4f7f4;
+
+    --texto: #405045;
+
+    --texto-gris: #777777;
+
+    --borde: #d7ded8;
+
+    --blanco: #ffffff;
+
+    --sombra:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--verde-fondo);
+
+    color:
+        var(--texto);
+
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.encabezado {
+
+    min-height: 65px;
+
+    padding:
+        0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        var(--blanco);
+
+    border-bottom:
+        1px solid #eeeeee;
+
+}
+
+
+/* LOGOTIPO */
+
+.logotipo {
+
+    color:
+        var(--verde-oscuro);
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+}
+
+
+/* NAVEGACIÓN */
+
+.navegacion {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+.navegacion a {
+
+    color:
+        #4c574e;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition:
+        0.2s;
+
+}
+
+
+.navegacion a:hover {
+
+    color:
+        var(--verde-principal);
+
+}
+
+
+/* ACCIONES */
+
+.acciones-encabezado {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.enlace-inicio-sesion {
+
+    color:
+        var(--verde-oscuro);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+.boton-encabezado {
+
+    padding:
+        10px 17px;
+
+    background:
+        var(--verde-oscuro);
+
+    border-radius:
+        6px;
+
+    color:
+        white;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   PÁGINA DE REGISTRO
+========================================= */
+
+.pagina-de-registro {
+
+    min-height:
+        calc(100vh - 65px);
+
+    padding:
+        45px 5%;
+
+}
+
+
+/* =========================================
+   DISEÑO DIVIDIDO
+========================================= */
+
+.diseño-dividido {
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    min-height: 610px;
+
+    margin:
+        0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        43% 57%;
+
+    overflow: hidden;
+
+    border-radius:
+        14px;
+
+    background:
+        white;
+
+    box-shadow:
+        var(--sombra);
+
+}
+
+
+/* =========================================
+   PANEL DE INFORMACIÓN
+========================================= */
+
+.panel-de-informacion {
+
+    padding:
+        45px 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+        linear-gradient(
+            rgba(24, 65, 32, 0.72),
+            rgba(24, 65, 32, 0.82)
+        ),
+
+        url("fondo\ bovino.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+}
+
+
+.contenido-informacion {
+
+    width: 100%;
+
+    color:
+        white;
+
+}
+
+
+/* LOGOTIPO DEL PANEL */
+
+.logotipo-panel {
+
+    color:
+        white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+}
+
+
+/* TÍTULO */
+
+.panel-de-informacion h1 {
+
+    max-width:
+        370px;
+
+    margin:
+        100px 0 20px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        34px;
+
+    line-height:
+        1.08;
+
+    font-weight:
+        600;
+
+}
+
+
+/* TEXTO */
+
+.texto-informacion {
+
+    max-width:
+        350px;
+
+    margin-bottom:
+        30px;
+
+    color:
+        #edf5ee;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.6;
+
+}
+
+
+/* =========================================
+   BENEFICIOS
+========================================= */
+
+.lista-beneficios {
+
+    padding:
+        0;
+
+    margin:
+        0;
+
+    list-style:
+        none;
+
+}
+
+
+.beneficio {
+
+    position:
+        relative;
+
+    padding-left:
+        29px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.beneficio::before {
+
+    content:
+        "✓";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        0;
+
+    width:
+        19px;
+
+    height:
+        19px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        #57925f;
+
+    color:
+        white;
+
+    font-size:
+        10px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.beneficio strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        4px;
+
+    font-size:
+        12px;
+
+}
+
+
+.beneficio span {
+
+    display:
+        block;
+
+    color:
+        #dbe9dd;
+
+    font-size:
+        9px;
+
+    line-height:
+        1.45;
+
+}
+
+
+/* SELLO */
+
+.sello-excelencia {
+
+    margin-top:
+        30px;
+
+    color:
+        #dbe9dd;
+
+    font-size:
+        8px;
+
+    letter-spacing:
+        0.5px;
+
+}
+
+
+/* =========================================
+   PANEL DEL FORMULARIO
+========================================= */
+
+.panel-de-formulario {
+
+    padding:
+        40px 55px;
+
+    background:
+        white;
+    font-size: medium;
+}
+
+
+.panel-de-formulario h2 {
+
+    margin:
+        0 0 6px;
+
+    color:
+        var(--verde-oscuro);
+
+    font-size:
+        27px;
+
+    font-weight:
+        700;
+
+}
+
+
+.descripcion-formulario {
+
+    margin:
+        0 0 20px;
+
+    color:
+        var(--texto-gris);
+
+    font-size:
+        17px;
+
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.formulario-registro {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        5px;
+    
+}
+
+
+.formulario-registro > label {
+
+    color:
+        var(--texto);
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* CAMPOS */
+
+.formulario-registro > input {
+
+    width:
+        100%;
+
+    height:
+        35px;
+
+    padding:
+        0 10px;
+
+    margin-bottom:
+        7px;
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        5px;
+
+    outline:
+        none;
+
+    color:
+        #333;
+
+    font-size:
+        14px;
+
+}
+
+
+.formulario-registro > input:focus {
+
+    border-color:
+        var(--verde-principal);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(69, 124, 76, 0.08);
+
+}
+
+
+/* =========================================
+   CONTRASEÑA
+========================================= */
+
+.campo-contrasena {
+
+    position:
+        relative;
+
+    margin-bottom:
+        7px;
+
+}
+
+
+.campo-contrasena input {
+
+    width:
+        100%;
+
+    height:
+        35px;
+
+    padding:
+        0 60px 0 10px;
+
+    border:
+        1px solid var(--borde);
+
+    border-radius:
+        5px;
+
+    outline:
+        none;
+
+    font-size:
+        14px;
+
+}
+
+
+.campo-contrasena input:focus {
+
+    border-color:
+        var(--verde-principal);
+
+}
+
+
+.boton-mostrar {
+
+    position:
+        absolute;
+
+    right:
+        8px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--verde-principal);
+
+    font-size:
+        10px;
+
+    cursor:
+        pointer;
+
+}
+
+
+/* =========================================
+   TEXTO OPCIONAL
+========================================= */
+
+.texto-opcional {
+
+    color:
+        #999999;
+
+    font-weight:
+        normal;
+
+}
+
+
+/* =========================================
+   SELECCIÓN DE ROL
+========================================= */
+
+.seleccion-rol {
+
+    padding:
+        0;
+
+    margin:
+        4px 0 7px;
+
+    border:
+        none;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        5px;
+
+}
+
+
+.seleccion-rol legend {
+
+    width:
+        100%;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--texto);
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* TARJETA DE ROL */
+
+.tarjeta-rol {
+
+    min-height:
+        50px;
+
+    padding:
+        6px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    border:
+        1px solid #dfe4df;
+
+    border-radius:
+        5px;
+
+    cursor:
+        pointer;
+
+}
+
+
+.tarjeta-rol:hover {
+
+    border-color:
+        var(--verde-principal);
+
+    background:
+        #f5f9f5;
+
+}
+
+
+.tarjeta-rol input {
+
+    display:
+        none;
+
+}
+
+
+.tarjeta-rol:has(input:checked) {
+
+    border-color:
+        var(--verde-principal);
+
+    background:
+        #f0f6f1;
+
+}
+
+
+.tarjeta-rol strong {
+
+    color:
+        var(--verde-oscuro);
+
+    font-size:
+        10px;
+
+}
+
+
+.tarjeta-rol small {
+
+    margin-top:
+        2px;
+
+    color:
+        #888888;
+
+    font-size:
+        7px;
+
+}
+
+
+/* =========================================
+   TÉRMINOS
+========================================= */
+
+.aceptar-terminos {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    margin:
+        2px 0 5px;
+
+    color:
+        #777777;
+
+    font-size:
+        13px !important;
+
+    font-weight:
+        normal !important;
+
+}
+
+
+.aceptar-terminos input {
+
+    width:
+        12px;
+
+    height:
+        12px;
+
+    margin:
+        0;
+
+}
+
+
+/* =========================================
+   BOTÓN PRINCIPAL
+========================================= */
+
+.boton-principal {
+
+    width:
+        100%;
+
+    height:
+        36px;
+
+    margin-top:
+        4px;
+
+    border:
+        none;
+
+    border-radius:
+        5px;
+
+    background:
+        var(--verde-oscuro);
+
+    color:
+        white;
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+}
+
+
+.boton-principal:hover {
+
+    background:
+        var(--verde-principal);
+
+}
+
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.separador {
+
+    position:
+        relative;
+
+    margin:
+        12px 0;
+
+    text-align:
+        center;
+
+    color:
+        #999999;
+
+    font-size:
+        8px;
+
+}
+
+
+.separador::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    top:
+        50%;
+
+    border-top:
+        1px solid #eeeeee;
+
+}
+
+
+.separador span {
+
+    position:
+        relative;
+
+    padding:
+        0 8px;
+
+    background:
+        white;
+
+}
+
+
+/* =========================================
+   BOTÓN GOOGLE
+========================================= */
+
+.boton-google {
+
+    width:
+        100%;
+
+    height:
+        36px;
+
+    border:
+        1px solid #dddddd;
+
+    border-radius:
+        5px;
+
+    background:
+        white;
+
+    color:
+        #555555;
+
+    font-size:
+        13px;
+
+    cursor:
+        pointer;
+
+}
+
+
+.boton-google strong {
+
+    margin-right:
+        7px;
+
+    color:
+        #4285f4;
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================
+   POLÍTICA
+========================================= */
+
+.politica {
+
+    margin:
+        13px 0 0;
+
+    text-align:
+        center;
+
+    color:
+        #999999;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.5;
+
+}
+
+
+.politica a {
+
+    color:
+        var(--verde-principal);
+
+    text-decoration:
+        none;
+
+}
+
+
+/* =========================================
+   INICIAR SESIÓN
+========================================= */
+
+.enlace-registro {
+
+    margin:
+        12px 0 0;
+
+    text-align:
+        center;
+
+    color:
+        #777777;
+
+    font-size:
+        12px;
+
+}
+
+
+.enlace-registro a {
+
+    color:
+        var(--verde-principal);
+
+    text-decoration:
+        none;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+.pie-de-pagina {
+
+    padding:
+        25px 5%;
+
+    background:
+        var(--verde-oscuro);
+
+    color:
+        white;
+
+}
+
+
+.contenido-pie {
+
+    max-width:
+        1050px;
+
+    margin:
+        auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+
+.logotipo-pie {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logotipo-pie img {
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+
+.enlaces-pie {
+
+    display:
+        flex;
+
+    gap:
+        20px;
+
+}
+
+
+.enlaces-pie a {
+
+    color:
+        #dbe9dd;
+
+    text-decoration:
+        none;
+
+    font-size:
+        9px;
+
+}
+
+
+.copyright {
+
+    max-width:
+        1050px;
+
+    margin:
+        18px auto 0;
+
+    padding-top:
+        13px;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+
+    color:
+        #c7d8c9;
+
+    font-size:
+        8px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navegacion {
+
+        display:
+            none;
+
+    }
+
+
+    .diseño-dividido {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .panel-de-informacion {
+
+        min-height:
+            450px;
+
+    }
+
+
+    .panel-de-informacion h1 {
+
+        margin-top:
+            60px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .encabezado {
+
+        padding:
+            12px 4%;
+
+    }
+
+
+    .acciones-encabezado
+    .enlace-inicio-sesion {
+
+        display:
+            none;
+
+    }
+
+
+    .pagina-de-registro {
+
+        padding:
+            20px 3%;
+
+    }
+
+
+    .panel-de-informacion,
+    .panel-de-formulario {
+
+        padding:
+            30px 25px;
+
+    }
+
+
+    .seleccion-rol {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .contenido-pie {
+
+        flex-direction:
+            column;
+
+        gap:
+            15px;
+
+    }
+
+}
