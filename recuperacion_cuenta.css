@@ -1,0 +1,246 @@
+/* Utilidades y Estructura de Autenticación */
+.auth-body {
+    background-color: #f4f7f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 440px;
+    padding: 1.5rem;
+}
+
+.auth-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e6e0;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.brand-logo {
+    font-size: 2.4rem;
+    color: #2e7d32;
+    margin-bottom: 0.2rem;
+}
+
+.brand-title {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #1b2e1e;
+    margin-bottom: 1rem;
+}
+
+.auth-header h2 {
+    font-size: 1.4rem;
+    color: #222222;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    font-size: 0.88rem;
+    color: #666666;
+    line-height: 1.4;
+}
+
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #333333;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: #888888;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-wrapper input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+/* Inputs OTP */
+.otp-container {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.otp-input {
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.otp-input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.resend-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    color: #666666;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #2e7d32;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Requisitos de Contraseña */
+.password-requirements {
+    background: #f8faf8;
+    border: 1px solid #e2e8e2;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin-bottom: 1.3rem;
+}
+
+.req-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 0.4rem;
+}
+
+.password-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.78rem;
+    color: #666666;
+}
+
+.password-requirements li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0.2rem;
+}
+
+/* Botones y Footer */
+.btn-primary {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #216125;
+}
+
+.auth-footer {
+    margin-top: 1.8rem;
+    text-align: center;
+}
+
+.back-link {
+    color: #555555;
+    text-decoration: none;
+    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-link:hover {
+    color: #2e7d32;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Estado de Éxito */
+.success-card {
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 3.5rem;
+    color: #2e7d32;
+    margin-bottom: 0.8rem;
+}
+
+.success-card h3 {
+    font-size: 1.3rem;
+    color: #1b2e1e;
+    margin-bottom: 0.5rem;
+}
+
+.success-card p {
+    font-size: 0.88rem;
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.block-link {
+    text-decoration: none;
+}

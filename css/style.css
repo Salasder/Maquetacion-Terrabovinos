@@ -180,6 +180,409 @@ textarea {
     background: var(--verde-claro);
 }
 
+/* =====================================================
+   4.Pagina-Principal
+===================================================== */
+
+.header {
+    width: 100%;
+    min-height: 64px;
+
+    background-color: var(--blanco);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid var(--borde);
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 8px;
+
+    width: auto;
+    height: 50px;
+
+    color: var(--verde-principal);
+    text-decoration: none;
+    margin-left: -50px;
+    white-space: nowrap;
+}
+
+.logo img {
+    display: block;
+    order: -1;
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.logo span {
+    display: block;
+
+    color: var(--verde-principal);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: #4d554e;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--verde-principal);
+}
+
+.botones-autenticacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.btn-secundario {
+    display: inline-block;
+
+    color: var(--verde-principal);
+    background-color: transparent;
+
+    border: 1px solid var(--verde-principal);
+    border-radius: 5px;
+
+    padding: 8px 15px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background-color: var(--verde-claro);
+}
+
+
+.btn-primario {
+    display: inline-block;
+
+    color: var(--blanco);
+    background-color: var(--verde-principal);
+
+    border: 1px solid var(--verde-principal);
+    border-radius: 5px;
+
+    padding: 8px 15px;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.btn-primario:hover {
+    background-color: var(--verde-hover);
+    border-color: var(--verde-hover);
+}
+
+main {
+    width: 100%;
+}
+
+.seccion-principal {
+    width: 100%;
+
+    padding: 65px 7%;
+
+    background-color: var(--fondo);
+}
+
+
+
+.Contenido {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.texto-principal {
+    max-width: 520px;
+}
+
+
+.etiqueta {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 5px 10px;
+
+    background-color: var(--verde-claro);
+
+    color: var(--verde-principal);
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+.texto-principal h1 {
+    color: var(--verde-oscuro);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    line-height: 1.12;
+
+    margin-bottom: 20px;
+}
+
+.texto-principal h1 span {
+    color: var(--verde-principal);
+
+    display: inline;
+}
+
+
+
+.texto-principal p {
+    color: var(--texto-secundario);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+    margin-bottom: 25px;
+}
+
+
+
+.botones-principales {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.panel {
+    background-color: var(--blanco);
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.encabezado-de-tarjeta {
+    padding-bottom: 18px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid var(--borde);
+
+    color: var(--verde-oscuro);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+
+.estadisticas {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.estadistica {
+    background-color: var(--verde-claro);
+
+    border-radius: 8px;
+
+    padding: 18px 10px;
+
+    text-align: center;
+}
+
+
+.estadistica h3 {
+    color: var(--verde-principal);
+
+    font-size: 23px;
+
+    margin-bottom: 5px;
+}
+
+
+.estadistica p {
+    color: var(--texto-secundario);
+
+    font-size: 12px;
+}
+
+
+.alerta {
+    background-color: #f8f2df;
+
+    color: #776329;
+
+    border: 1px solid #eadfbf;
+
+    border-radius: 7px;
+
+    padding: 12px;
+
+    font-size: 12px;
+}
+
+
+.funcionalidades {
+    width: 100%;
+
+    padding: 65px 7%;
+
+    background-color: var(--blanco);
+
+    text-align: center;
+}
+
+
+.funcionalidades h2 {
+    color: var(--verde-oscuro);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+
+.cuadricula-funcionalidades {
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    text-align: left;
+}
+
+
+.tarjeta-funcionalidades {
+    background-color: var(--blanco);
+
+    border: 1px solid var(--borde);
+
+    border-radius: 8px;
+
+    padding: 25px 20px;
+
+    min-height: 170px;
+
+    box-shadow: var(--sombra);
+
+    transition: 0.3s ease;
+}
+
+
+.tarjeta-funcionalidades:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    border-color: #cdd8ca;
+}
+
+
+.tarjeta-funcionalidades h3 {
+    color: var(--verde-principal);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+.tarjeta-funcionalidades p {
+    color: var(--texto-secundario);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
 
 /* =========================================================
    4.LOGIN 
@@ -189,8 +592,46 @@ textarea {
     min-height: 100vh;
     background: #f4f8f4;
 }
+.encabezado-principal {
+    width: 100%;
+    height: 65px;
 
-.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.encabezado-principal .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 8px;
+    margin-left: 10px;
+
+    color: var(--verde-principal);
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.encabezado-principal .logo img {
+    order: -1;
+
+    display: block;
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.contenedor{
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 30px;
@@ -200,7 +641,7 @@ textarea {
     gap: 50px;
 }
 
-.tarjeta {
+.tarjeta{
     background: white;
     padding: 32px;
     border: 1px solid var(--borde);
@@ -263,7 +704,7 @@ textarea {
     font-size: 13px;
 }
 
-.recordar {
+.recordar{
     display: flex;
     align-items: center;
     gap: 6px;
@@ -314,7 +755,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.informacion>p {
+.informacion > p {
     color: var(--texto-secundario);
     font-size: 15px;
     max-width: 500px;
@@ -424,7 +865,7 @@ textarea {
     margin-bottom: 8px;
 }
 
-.panel-de-formulario>p {
+.panel-de-formulario > p {
     color: var(--texto-secundario);
     font-size: 14px;
     margin-bottom: 25px;
@@ -517,27 +958,6 @@ textarea {
 /* =========================================================
    7. SELECCIÓN DE ROL
    ========================================================= */
-header {
-    width: 100%;
-    min-height: 76px;
-
-    padding: 0 5%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 25px;
-
-    background: var(--blanco);
-
-    border-bottom: 1px solid #e4eae5;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
 .vista-roles {
     min-height: 100vh;
     background: #f4f8f4;
@@ -854,10 +1274,20 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.logo-form{
+    display: block;
+    max-width: 120px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+.logo-form:hover{
+    background-color: rgb(157, 241, 131);
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
 
-h2,
-h3,
-p {
+h2, h3, p {
     text-align: center;
 }
 
@@ -881,8 +1311,7 @@ input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
-    /* Evita que el desbordamiento */
+    box-sizing: border-box; /* Evita que el desbordamiento */
 }
 
 button {
