@@ -207,7 +207,6 @@ textarea {
     border-radius: 18px;
     box-shadow: var(--sombra);
 }
-
 .encabezado-autenticacion {
     text-align: center;
     margin-bottom: 22px;
@@ -840,11 +839,13 @@ header {
     }
 
 }
-
 /* =========================================================
    9. Recuperacion_cuenta
    ========================================================= */
 
+   body{
+    background-color: rgb(232, 255, 225);
+   }
 .caja {
     background-color: #ffffff;
     width: 350px;
