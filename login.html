@@ -2,178 +2,148 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Iniciar sesión | TERRABOVINO</title>
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body class="pagina-inicio-sesion">
 
     <header class="encabezado-principal">
+
         <a href="PagPrincipal.html" class="logo">
-           <img src="Logo.png" alt="logo">
+            <img src="Logo.png" alt="Logo de Terrabovino">
             TERRABOVINO
         </a>
     </header>
     <main class="contenedor">
-
         <section class="tarjeta">
-
-            <div class="encabezado-autenticacion">
-                <h1>
-                    Bienvenido a TERRABOVINO
-                </h1>
-
+            <header class="encabezado-autenticacion">
+                <h1>Bienvenido a TERRABOVINO</h1>
                 <p>
                     Inicia sesión para acceder a la
                     gestión de tu ganadería.
                 </p>
+            </header>
 
-            </div>
-            <form class="formulario">
-
+            <form class="formulario" action="#" method="post">
                 <div class="grupo-formulario">
-
-                    <label for="email">
-                        Correo electrónico
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="ejemplo@correo.com"
-                        required
-                    >
-
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                 </div>
-
                 <div class="grupo-formulario">
-
-                    <label for="password">
-                        Contraseña
-                    </label>
-
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Ingresa tu contraseña"
-                        required
-                    >
-
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
                 </div>
 
                 <div class="opciones-formulario">
-
                     <label class="recordar">
-
-                        <input
-                            type="checkbox"
-                            name="remember"
-                        >
-
-                        Recordarme
-
+                        <input type="checkbox" name="remember">
+                        <span>
+                            Recordarme
+                        </span>
                     </label>
-
                     <a href="recuperacion_cuenta.html">
                         ¿Olvidaste tu contraseña?
                     </a>
 
                 </div>
-                <button
-                    type="submit"
-                    class="boton-principal enviar-autenticacion">
+                <button type="submit" class="boton-principal enviar-autenticacion">
                     Iniciar sesión
                 </button>
 
             </form>
-            <div class="registro-autenticacion">
 
+            <div class="registro-autenticacion">
                 <p>
                     ¿Aún no tienes una cuenta?
                 </p>
-
                 <a href="registro.html">
                     Crear una cuenta
                 </a>
 
             </div>
-
         </section>
 
         <section class="informacion">
-
-            <h2>
-                Gestiona tu ganadería
-                desde un solo lugar
-            </h2>
-
+            <h2>Gestiona tu ganaderíadesde un solo lugar</h2>
             <p>
                 TERRABOVINO te permite organizar la información
                 de tus bovinos, potreros, sanidad, producción,
                 reproducción y actividades comerciales.
             </p>
 
-
             <article class="beneficios">
 
                 <div>
-                  <p> Control de ganado</p>
+                    <span>
+                        🐄
+                    </span>
+                    <p>
+                        Control de ganado
+                    </p>
                 </div>
-
                 <div>
-                    <p>Control sanitario</p>
-                </div>
+                    <span>
+                        🩺
+                    </span>
+                    <p>
+                        Control sanitario
+                    </p>
 
+                </div>
                 <div>
-                  <p> Reportes</p>
-                </div>
 
+                    <span>
+                        📊
+                    </span>
+
+                    <p>
+                        Reportes
+                    </p>
+
+                </div>
                 <div>
-                    <p>Gestión de potreros</p>
-                </div>
 
+                    <span>
+                        🌱
+                    </span>
+
+                    <p>
+                        Gestión de potreros
+                    </p>
+
+                </div>
             </article>
-
         </section>
-
     </main>
-   
+
     <footer class="main-footer">
-
         <div class="footer-logo">
-             TERRABOVINO
+            TERRABOVINO
         </div>
-
         <nav class="footer-links">
 
-            <a href="#">
-                Ayuda
-            </a>
+            <a href="#">Ayuda</a>
 
-            <a href="#">
-                Términos
-            </a>
+            <a href="#">Términos</a>
 
-            <a href="#">
-                Privacidad
-            </a>
+            <a href="#">Privacidad</a>
 
-            <a href="#">
-                Contacto
-            </a>
-
+            <a href="#">Contacto</a>
         </nav>
-
         <p>
-            © 2026 Terrabovino. Gestión inteligente para tu ganadería.
+            © 2026 Terrabovino.
+            Gestión inteligente para tu ganadería.
         </p>
-
     </footer>
+
 </body>
+
 </html>
